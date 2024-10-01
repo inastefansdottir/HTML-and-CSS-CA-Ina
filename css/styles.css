@@ -1,0 +1,69 @@
+/* Use import to split up your CSS into manageable chunks */
+@import url("./_reset.css");
+/* Files that are only needed to be imported are called partials */
+/* These are marked with an underscore: */
+@import url("./_variables.css");
+/* Feel free to add as many of these imports as you need */
+
+body {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url('../assets/images/laptop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    display: none;
+    color: white;
+}
+
+#container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px black;
+    background-color: lightseagreen;
+    display: inline-block;
+    padding: 30px 50px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border: none;
+    color: black;
+    transition: background-color: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: salmon;
+}
+
+@media (max-width: 700px) {
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
