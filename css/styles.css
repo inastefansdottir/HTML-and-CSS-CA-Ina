@@ -5,15 +5,94 @@
 @import url("./variables.css");
 /* Feel free to add as many of these imports as you need */
 
-body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+html, body {
+  height: 100%; /* html and body takes the full height */
+  margin: 0; /* remove default margin */
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+body {
+  display: flex; /* use flexbox */
+  flex-direction: column; /* stack elements vertically */
+  background-color: gray;
+  font-family: 'alexandria', Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+header {
+  font-size: 20px; 
+}
+
+main {
+  flex: 1; /* allow the main content area to grow */
+}
+
+.sidebar {
+  height: 100vh; /* full height of the viewport */
+  width: 200px; /* width of the sidebar */
+  position: fixed; /*keeps the sidebar fixed on the left */
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding-left: 30px; /*adds space on the left */
+  padding-top: 20px; /*adds space on the top */
+}
+
+.logo {
+  padding-left: 40px; /* lines up with the text */
+  width: 191px; /*adjust the size of the logo */
+  height: auto; /* maintain aspect ratio */
+  margin-bottom: 20px; /* space between logo and menu */
+}
+
+nav ul {
+  list-style: none; /* removes bullet points */
+}
+
+nav ul li {
+  margin: 40px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none; /* removes the line underneath */
+  display: block; /* makes the link area larger */
+}
+
+nav ul li a:hover {
+  font-weight: 600;
+  color: #801889;
+}
+
+nav ul li a:active {
+  color: #db21cc
+}
+
+#search-container {
+  position: fixed;
+  top: 40px; /* distance from the top */
+  right: 80px; /* distance from the right */
+}
+
+#search {
+  font-family: 'alexandria', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 12px 10px 12px 20px;
+  border-radius: 30px;
+
+}
+
+footer {
+  color: white;
+  text-align: left;
+  font-weight: 300;
+  font-size: 10px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  text-align: left;
+  position: relative;
+}
+
+footer p {
+  margin: 0;
 }
