@@ -11,9 +11,12 @@ html, body {
 }
 
 body {
+  background-image: url(../assets/images/background.png);
+  background-size: cover; /* covers the whole screen and scales */
+  background-repeat: no-repeat; /* doesnt repeat background */
+  background-position: left; /* stuck on the left */
   display: flex; /* use flexbox */
   flex-direction: column; /* stack elements vertically */
-  background-color: gray;
   font-family: 'alexandria', Helvetica, sans-serif;
   font-weight: 400;
 }
@@ -37,6 +40,15 @@ main {
 
 .logo {
   display: none;
+}
+
+.logo-mobile {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: auto;
+  top: 20px;
+  margin: 0 auto; /* makes it centered */
 }
 
 nav ul {
@@ -64,7 +76,7 @@ nav ul li a:active {
 
 nav,
 #menu-checkbox {
-  display: none;
+  display: none; /* cant be seen on the page */
 }
 
 .hamburger-icon {
@@ -95,12 +107,14 @@ nav {
   display: none;
 }
 
+/* styling for pc screens */
 @media (min-width: 600px) {
   nav {
     display: block;
     position: fixed; /*keeps the sidebar fixed on the left */
     background-color: transparent !important; /* remove the background (!important overrides the previous background */
-    padding-top: 20px
+    padding-top: 20px; /* space on the top */
+    padding-left: 40px; /*space on the left */
   }
 
   .hamburger-icon {
@@ -109,19 +123,22 @@ nav {
 
   #search-container {
     display: block;
-    position: fixed;
+    position: fixed; 
     top: 40px; /* distance from the top */
     right: 80px; /* distance from the right */
   }
 
   .logo {
     display: block;
-    padding: 0px 40px 10px 40px; /* adds space around the logo */
-    width: 150px; /*adjust the size of the logo */
+    padding: 0px 40px 20px 40px; /* adds space around the logo */
+    width: 170px; /*adjust the size of the logo */
     height: auto; /* maintain aspect ratio */
   }
-}
 
+  .logo-mobile {
+    display: none;
+  }
+}
 
 #search {
   font-family: 'alexandria', Helvetica, sans-serif;
@@ -136,7 +153,7 @@ footer {
   color: white;
   font-weight: 300;
   font-size: 10px;
-  padding-left: 60px;
+  padding-left: 70px;
   padding-bottom: 30px;
   text-align: left;
   position: relative;
