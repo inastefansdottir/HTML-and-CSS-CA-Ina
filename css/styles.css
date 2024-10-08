@@ -10,6 +10,12 @@ html, body {
   margin: 0; /* remove default margin */
 }
 
+* {
+  margin: 0; /* removes default margin for all elements */
+  padding: 0; /* removes default padding for alll elements */
+  box-sizing: border-box; /* ensures padding and borders are included in the elements width/height */
+}
+
 body {
   background-image: url(../assets/images/background.png);
   background-size: cover; /* covers the whole screen and scales */
@@ -18,147 +24,169 @@ body {
   display: flex; /* use flexbox */
   flex-direction: column; /* stack elements vertically */
   font-family: 'alexandria', Helvetica, sans-serif;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+
+input,
+button,
+texteara {
+  font-family: inherit; /* buttons and forms will have the same font as the body */
+}
+
+.navbar {
+  position: relative;
+  background-color: transparent;
+  z-index: 5; /* makes sure its on top of the hero picture and dark overlay */
+  display: flex; /* creates a flex container */
+  justify-content: space-between; /* spaces items on opposites sides */
+  align-items: center; /* centers items within the header */
+  padding: 0 5%; /* adds horizontal padding for spacing */
+}
+
+.logo img {
+  max-height: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none; /* remove underline from links */
+  font-size: 1em;
   font-weight: 400;
 }
 
-header {
-  font-size: 20px; 
-}
-
-main {
-  flex: 1; /* allow the main content area to grow */
-}
-
-.sidebar {
-  height: 100vh; /* full height of the viewport */
-  width: 200px; /* width of the sidebar */
-  position: fixed; /*keeps the sidebar fixed on the left */
-  left: 0;
-  top: 0;
-  height: 100%;
-}
-
-.logo {
-  display: none;
-}
-
-.logo-mobile {
-  position: relative;
-  display: block;
-  width: 100px;
-  height: auto;
-  top: 20px;
-  margin: 0 auto; /* makes it centered */
-}
-
-nav ul {
-  list-style: none; /* removes bullet points */
-}
-
-nav ul li {
-  margin: 40px 0;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none; /* removes the line underneath */
-  display: block; /* makes the link area larger */
-}
-
-nav ul li a:hover {
-  font-weight: 600;
+.nav-links a:hover {
   color: #801889;
 }
 
-nav ul li a:active {
-  color: #db21cc
-}
-
-nav,
-#menu-checkbox {
-  display: none; /* cant be seen on the page */
-}
-
-.hamburger-icon {
-  position: absolute;
-  color: white;
-  top: 30px;
-  left: 40px;
-  z-index: 1000;
-}
-
-#menu-checkbox:checked ~ nav {
-  display: block;
-}
-
-header {
-  position: relative;
-}
-
-nav {
-  position: absolute;
-  background: black;
-  padding-right: 40px;
-  padding-top: 50px;
-  border-radius: 0px 10px 10px 10px;
-}
-
-#search-container {
-  display: none;
-}
-
-/* styling for pc screens */
-@media (min-width: 600px) {
-  nav {
-    display: block;
-    position: fixed; /*keeps the sidebar fixed on the left */
-    background-color: transparent !important; /* remove the background (!important overrides the previous background */
-    padding-top: 20px; /* space on the top */
-    padding-left: 40px; /*space on the left */
-  }
-
-  .hamburger-icon {
-    display: none;
-  }
-
-  #search-container {
-    display: block;
-    position: fixed; 
-    top: 40px; /* distance from the top */
-    right: 80px; /* distance from the right */
-  }
-
-  .logo {
-    display: block;
-    padding: 0px 40px 20px 40px; /* adds space around the logo */
-    width: 170px; /*adjust the size of the logo */
-    height: auto; /* maintain aspect ratio */
-  }
-
-  .logo-mobile {
-    display: none;
-  }
+.nav-links a:active {
+  color: #db21cc;
 }
 
 #search {
-  font-family: 'alexandria', Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  padding: 12px 10px 12px 20px;
-  border-radius: 30px;
+  font-weight: 400;
+  font-size: 0.8em;
+  padding: 12px 20px;
   border: none;
+  border-radius: 30px;
 }
 
-footer {
-  color: white;
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* adjust this height to fit the design */
+  background-image: url(/assets/images/hero-image.jpg); /* background image */
+  background-size: cover; /* make sure the image covers the entire section */
+  background-position: center; /* centers the image */
+  position: relative; /* keeps the section in normal flow */
+  flex-shrink: 0; /* prevents it from shrinking */
+}
+
+.hero-section::before {
+  content: ""; /* necessary for pseudo-elements */
+  position: absolute; /* position it on top */
+  top: 0; /* align to top */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black */
+  z-index: 1;
+}
+
+.hero-text {
+  display: flex; /* flexbox */
+  flex-direction: column; /* stack text vertically */
+  align-items: center; /* center text horizintally */
+  text-align: center; /* center text */
+  margin: auto;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1em;
   font-weight: 300;
-  font-size: 10px;
-  padding-left: 70px;
-  padding-bottom: 30px;
-  text-align: left;
-  position: relative;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
-footer p {
-  margin: 0;
+.button {
+  font-size: 1em;
+  font-weight: 400;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #130a7d;
+  color: white;
+}
+
+main {
+  margin-top: 40px; /* space between the hero section and main */
+}
+
+.best-sellers {
+  margin-left: 5%;
+  margin-bottom: 1%;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.best-sellers-games img {
+  width: 16vw; /* image width scales based on the viewport width */
+  height: 16vw; /* height matches width to maintain the square shape */
+  object-fit: cover; /* crops the image to the size */
+  border-radius: 7%;
+}
+
+.best-sellers-games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+/* media for responsive design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 3%;
+  }
+
+  .nav-links {
+    gap: 30px; /* reduce gap on smaller screens */
+  }
+
+  .logo {
+    height: auto;
+    width: 100px;
+  }
+
+  .hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero-text p {
+    font-size: 0.9em;
+  }
+
+  #search {
+    display: none;
+  }
+  
+  .hero-section {
+    height: 70%;
+  }
 }
