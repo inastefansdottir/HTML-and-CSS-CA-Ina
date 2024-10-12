@@ -1,0 +1,65 @@
+
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* adjust this height to fit the design */
+  background-image: url(/assets/images/hero-image.jpg); /* background image */
+  background-size: cover; /* make sure the image covers the entire section */
+  background-position: center; /* centers the image */
+  position: relative; /* keeps the section in normal flow */
+  flex-shrink: 0; /* prevents it from shrinking */
+}
+
+.hero-section::before {
+  content: ""; /* necessary for pseudo-elements */
+  position: absolute; /* position it on top */
+  top: 0; /* align to top */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% black */
+  z-index: 1;
+}
+
+.hero-text {
+  display: flex; /* flexbox */
+  flex-direction: column; /* stack text vertically */
+  align-items: center; /* center text horizintally */
+  text-align: center; /* center text */
+  margin: auto;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1em;
+  font-weight: 300;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.best-sellers {
+  margin-left: 5%;
+  margin-bottom: 1%;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.best-sellers-games img {
+  width: 16vw; /* image width scales based on the viewport width */
+  height: 16vw; /* height matches width to maintain the square shape */
+  object-fit: cover; /* crops the image to the size */
+  border-radius: 7%;
+}
+
+.best-sellers-games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}

@@ -1,0 +1,89 @@
+html, body {
+    height: 100%; /* html and body takes the full height */
+  }
+  
+  * {
+    margin: 0; /* removes default margin for all elements */
+    padding: 0; /* removes default padding for alll elements */
+    box-sizing: border-box; /* ensures padding and borders are included in the elements width/height */
+  }
+  
+  body {
+    background-image: url(../assets/images/background.png);
+    background-size: cover; /* covers the whole screen and scales */
+    background-repeat: no-repeat; /* doesnt repeat background */
+    background-position: left; /* stuck on the left */
+    display: flex; /* use flexbox */
+    flex-direction: column; /* stack elements vertically */
+    font-family: 'alexandria', Helvetica, sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+  }
+  
+  input,
+  button,
+  texteara {
+    font-family: inherit; /* buttons and forms will have the same font as the body */
+  }
+  
+  /* navigation menu */
+  .navbar {
+    position: relative;
+    background-color: transparent;
+    z-index: 5; /* makes sure its on top of the hero picture and dark overlay */
+    display: flex; /* creates a flex container */
+    justify-content: space-between; /* spaces items on opposites sides */
+    align-items: center; /* centers items within the header */
+    padding: 0 5%; /* adds horizontal padding for spacing */
+  }
+  
+  .logo img {
+    max-height: 60px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+  }
+  
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none; /* remove underline from links */
+    font-size: 1em;
+    font-weight: 400;
+  }
+  
+  .nav-links a:hover {
+    color: #801889;
+  }
+  
+  .nav-links a:active {
+    color: #db21cc;
+  }
+ 
+  main {
+    margin-top: 20px; /* space between the hero section and main */
+  }
+  
+  #search {
+    font-weight: 400;
+    font-size: 0.8em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+  }
+
+  /* button style */
+  .button {
+    font-size: 1em;
+    font-weight: 400;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background-color: #130a7d;
+    color: white;
+  }
