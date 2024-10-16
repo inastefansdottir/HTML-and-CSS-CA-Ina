@@ -1,0 +1,20 @@
+.games {
+    max-width: 1720px;
+    margin: 30px auto;
+}
+
+.games h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 2em;
+}
+
+.product-list img {
+    border-radius: 30px;
+    width: 100%;
+}

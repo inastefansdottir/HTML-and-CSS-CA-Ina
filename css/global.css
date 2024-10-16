@@ -9,15 +9,15 @@ html, body {
   }
   
   body {
+    background-color: #00011f; /* back up colour */
     background-image: url(../assets/images/background.png);
-    background-size: cover; /* covers the whole screen and scales */
     background-repeat: no-repeat; /* doesnt repeat background */
-    background-position: left; /* stuck on the left */
-    display: flex; /* use flexbox */
-    flex-direction: column; /* stack elements vertically */
+    background-attachment: fixed; /* stys fixed and doesnt scroll */
     font-family: 'alexandria', Helvetica, sans-serif;
     font-weight: 200;
     color: #ffffff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
   
   input,
@@ -34,7 +34,7 @@ html, body {
     display: flex; /* creates a flex container */
     justify-content: space-between; /* spaces items on opposites sides */
     align-items: center; /* centers items within the header */
-    padding: 0 5%; /* adds horizontal padding for spacing */
+    padding: 0.5% 5%; /* adds vertical and horizontal padding for spacing */
   }
   
   .logo img {
@@ -86,4 +86,43 @@ html, body {
     border-radius: 30px;
     background-color: #130a7d;
     color: white;
+  }
+
+  .accent {
+    background-color: #db21cc;
+  }
+  
+  /* footer style */
+  footer {
+    display: flex;
+    width: 100%; /* full width of the page, its needed to fix the css grids issue on the body element */
+    max-width: 1720px;
+    margin: auto;
+    padding: 30px 0px;
+    justify-content: space-between;
+  }
+
+  .social-media_icon {
+    color: #00011f;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 7px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+
+  .social-media_icon:hover {
+    background-color: #801889;
+  }
+
+  .social-media_icon:active {
+    background-color: #db21cc;
+  }
+
+  .fa-instagram {
+    padding: 7px 9px;
+  }
+
+  .copyright {
+    font-size: 0.9em;
   }
