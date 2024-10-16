@@ -1,0 +1,34 @@
+.about {
+    display: flex;
+    max-width: 1500px;
+    align-items: center;
+    margin: 50px auto;
+    gap: 150px;
+}
+
+.about img {
+    height: 50vh;
+    width: 50vh;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about h1 {
+    font-size: 2em;
+    font-weight: 500;
+    position: relative;
+    bottom: -15px;
+}
+
+.about h2 {
+    font-size: 6em;
+}
+
+.about p {
+    font-size: 1.2em;
+    width: 350px;
+}
+
+.about-gamehub {
+    margin-bottom: 20px;
+}

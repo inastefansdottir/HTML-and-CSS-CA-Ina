@@ -35,6 +35,7 @@ html, body {
     justify-content: space-between; /* spaces items on opposites sides */
     align-items: center; /* centers items within the header */
     padding: 0.5% 5%; /* adds vertical and horizontal padding for spacing */
+    position: relative;
   }
   
   .logo img {
@@ -48,7 +49,6 @@ html, body {
     display: flex;
     gap: 80px;
   }
-  
   
   .nav-links a {
     color: #ffffff;
@@ -64,17 +64,59 @@ html, body {
   .nav-links a:active {
     color: #db21cc;
   }
+
+  .current {
+    color: #db21cc !important; /* prioritises this colour */
+  }
  
   main {
     margin-top: 20px; /* space between the hero section and main */
   }
-  
+
+  /* right side of header */
+  #search,
+  .header-icon {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3)0%, rgba(255, 255, 255, 0.03) 100%);
+    border: 0.3px solid rgba(255, 255, 255, 0.3);
+  }
+
   #search {
     font-weight: 400;
     font-size: 0.8em;
     padding: 12px 20px;
-    border: none;
     border-radius: 30px;
+    color: #ffffff;
+  }
+
+  .header-icon {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .fa-user {
+    padding: 10px 13px;
+  }
+
+  .search-icons-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .header-icon:hover {
+    background-color: #801889;
+    border-color: #801889;
+  }
+
+  .header-icon:active {
+    background-color: #db21cc;
+    border-color: #db21cc;
+  }
+
+  .search-icons-section a {
+    color: inherit;
   }
 
   /* button style */
@@ -86,6 +128,7 @@ html, body {
     border-radius: 30px;
     background-color: #130a7d;
     color: white;
+    cursor: pointer; /* cursor changes to a pointer */
   }
 
   .accent {
@@ -100,6 +143,7 @@ html, body {
     margin: auto;
     padding: 30px 0px;
     justify-content: space-between;
+    align-items: center;
   }
 
   .social-media_icon {
