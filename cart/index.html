@@ -7,7 +7,7 @@
     <title>GameHub | Cart</title>
     <meta name="description" content="Welcome to your cart">
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/games.css">
+    <link rel="stylesheet" href="/css/cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
@@ -43,44 +43,51 @@
         </div>
     </header>
 
-    <main>
+    <main class="cart">
         <section class="order-list">
-            <div>
-                <p>GAME</p>
-                <p>PRICE</p>
-                <p>QUANTITY</p>
-                <p>TOTAL</p>
+            <p class="product text-style">GAME</p>
+            <p class="price-header text-style">PRICE</p>
+            <p class="quantity text-style">QUANTITY</p>
+            <p class="total text-style">TOTAL</p>
+
+            <div class="line-seperator"></div>
+
+            <img class="product-image center-align" src="/assets/images/GameHub_covers5.jpg" alt="image of the product">
+            <p class="bold-text-style title center-align">Title of Game</p>
+            <p class="bold-text-style price center-align">$60</p>
+            <div class="counter center-align">
+                <i class="fa-solid fa-minus"></i>
+                <p class="bold-text-style">1</p>
+                <i class="fa-solid fa-plus"></i>
             </div>
-            <hr class="styled-hr">
-            <div>
-                <!--picture of game-->
-                <p>Title of Game</p>
-                <p>$60</p>
-                <div class="counter">
-                    <p>1</p>
-                </div>
-                <p>$60</p>
-                <!--Ex icon-->
+            <p class="bold-text-style total-price center-align">$60</p>
+            <div class="ex center-align">
+                <i class="fa-solid fa-x"></i>
             </div>
-            <hr class="styled-hr">
+
+            <div class="line-seperator"></div>
         </section>
-        <section class="order-summary">
-            <h1>Order Summary</h1>
-            <hr class="styled-hr">
-            <div>
-                <p>Subtotal</p>
-                <p>$60</p>
+        <section class="order-summary_section">
+            <div class="order-summary">
+                <h1>Order Summary</h1>
+                <hr>
+                <div class="order-summary_text">
+                    <p class="faded-text">Subtotal</p>
+                    <p>$60</p>
+                </div>
+                <div class="order-summary_text">
+                    <p class="faded-text">Shipping</p>
+                    <p>Free</p>
+                </div>
+                <hr>
+                <div class="order-summary_text bigger-text">
+                    <p>Total</p>
+                    <p>$60</p>
+                </div>
+                <a href="/cart/checkout.html">
+                    <button class="button">Checkout</button>
+                </a>
             </div>
-            <div>
-                <p>Shipping</p>
-                <p>Free</p>
-            </div>
-            <hr class="styled-hr">
-            <div>
-                <p>Total</p>
-                <p>$60</p>
-            </div>
-            <button class="button">Checkout</button>
         </section>
     </main>
 
