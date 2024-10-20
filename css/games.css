@@ -18,3 +18,74 @@
     border-radius: 30px;
     width: 100%;
 }
+
+/* specific games */
+/* slideshow section */
+.slideshow-section {
+    position: relative;
+    max-width: 600px;
+    height: 700px;
+    margin: 2% auto;
+    overflow: hidden;
+}
+
+.slides {
+    width: 600px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.slideshow {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* show the slide when the correct radio button is checked */
+#radio1:checked ~ .first,
+#radio2:checked ~ .slideshow:nth-of-type(2),
+#radio3:checked ~ .slideshow:nth-of-type(3) {
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    color: rgb(225, 225, 225, 0.8);
+    font-size: 35px;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.prev:hover,
+.next:hover {
+    color: #801889;
+}
+
+/* show/hide arrows based on the checked state */
+#radio1:checked ~ .prev1,
+#radio2:checked ~ .prev2,
+#radio3:checked ~ .prev3 {
+    display: block;
+}
+
+#radio1:checked ~ .next1,
+#radio2:checked ~ .next2,
+#radio3:checked ~ .next3 {
+    display: block;
+}

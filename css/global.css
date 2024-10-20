@@ -143,9 +143,8 @@ html, body {
   footer {
     display: flex;
     width: 100%; /* full width of the page, its needed to fix the css grids issue on the body element */
-    max-width: 1720px;
     margin: auto;
-    padding: 30px 0px;
+    padding: 0 5%;
     justify-content: space-between;
     align-items: center;
   }

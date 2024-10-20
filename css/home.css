@@ -63,8 +63,7 @@
 }
 
 .best-sellers {
-  max-width: 1750px;
-  margin: 50px auto;
+  margin: 2% 5%;
 }
 
 /* newsletter section */
@@ -85,7 +84,7 @@
   text-align: center;
   border-radius: 30px;
   padding: 50px;
-  margin: 80px auto;
+  margin: 5% auto;
   max-width: 800px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;

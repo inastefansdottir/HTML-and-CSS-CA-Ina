@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameHub | About us</title>
+    <title>GameHub</title>
     <meta name="description" content="GameHub is an online shop where users can purchase computer games. This gaming marketplace lets you buy tons of video games online for any device.">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
                 <ul class="nav-links">
                     <li><a href="../">Home</a></li>
                     <li><a href="../games/">Games</a></li>
-                    <li><a href="../about/" class="current">About us</a></li>
+                    <li><a href="../about/">About us</a></li>
                     <li><a href="../contact/">Contact us</a></li>
                 </ul>
                 <div class="search-icons-section">
@@ -45,18 +45,20 @@
         </div>
     </header>
 
-    <main class="about">
+    <main>
         <section>
-            <h1>About us</h1>
-            <h2>Game Hub</h2>
-            <p class="about-gamehub">
-                GameHub is an online shop where users can purchase computer games. This gaming marketplace lets you buy tons of video games online for any device.
-            </p>
-            <p>GameHub is a competitively priced website with a huge range of games.</p>
+            <form action="../">
+                <h1>Log in</h1>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            
+                <button class="button">Log in</button>
+            </form>
+            <button class="button accent">Sign up</button>
         </section>
-        <div>
-            <img src="/assets/images/GameHub_covers5.jpg" alt="Picture of gamehub mascot">
-        </div>
     </main>
 
     <footer>
@@ -70,5 +72,5 @@
         </div>
     </footer>
 </body>
-
+    
 </html>
