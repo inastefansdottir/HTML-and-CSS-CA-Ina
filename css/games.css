@@ -4,7 +4,6 @@
 }
 
 .games h1 {
-    margin-bottom: 20px;
     font-size: 2em;
 }
 
@@ -14,33 +13,59 @@
     grid-gap: 2em;
 }
 
-.product-list img {
+.products img {
     border-radius: 30px;
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
-/* specific games */
+.products {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 5px;
+}
+
+.game-cover {
+    grid-column: -1/1;
+}
+
+.products h2,
+.products p {
+    grid-column: 1;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.products h2 {
+    font-size: 1.5em;
+}
+
+.small-button {
+    font-size: 0.8em;
+    padding: 10px 20px;
+}
+
+
+/* specific games page*/
 /* slideshow section */
 .slideshow-section {
     position: relative;
     max-width: 600px;
-    height: 700px;
-    margin: 2% auto;
+    height: 630px;
     overflow: hidden;
 }
 
 .slides {
     width: 600px;
-    height: 700px;
+    height: 630px;
     object-fit: cover;
     border-radius: 30px;
 }
 
 .slideshow {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* show the slide when the correct radio button is checked */
@@ -88,4 +113,102 @@ input[type="radio"] {
 #radio2:checked ~ .next2,
 #radio3:checked ~ .next3 {
     display: block;
+}
+
+/* thumbnail section */
+.thumbnail-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.thumbnail {
+    width: 120px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5; /* 50% opacity */
+    transition: opacity 0.3s ease-in-out; /* smooth transition over 0.3 seconds */
+}
+
+.thumbnail:hover {
+    opacity: 1; /* full opacity when hovered */
+}
+
+/* text section */
+.game-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.tags_section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: -20px;
+}
+
+.tags {
+    font-size: 0.7em;
+    padding: 2px 7px;
+    border-radius: 20px;
+}
+
+.game-title h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: -15px;
+}
+
+.rating {
+    font-size: 1.3em;
+}
+
+.game-title_paragraph {
+    width: 350px;
+}
+
+.price-styling {
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.bold-text-style {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.counter {
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    align-items: center;
+}
+
+.fa-plus,
+.fa-minus {
+    font-size: 15px;
+}
+
+.tags,
+.counter {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3)0%, rgba(255, 255, 255, 0.03) 100%);
+    border: 0.3px solid rgba(255, 255, 255, 0.3);
+}
+
+.button-width {
+    width: fit-content;
+}
+
+/* main section */
+.specififc-game-main {
+    display: flex;
+    gap: 40px;
+    margin: 2% auto;
+    height: 630px;
 }

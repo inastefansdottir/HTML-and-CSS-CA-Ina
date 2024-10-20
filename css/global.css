@@ -128,6 +128,7 @@ html, body {
     padding: 12px 30px;
     border-radius: 30px;
     background-color: #130a7d;
+    text-decoration: none;
     color: white;
     cursor: pointer; /* cursor changes to a pointer */
   }
@@ -143,8 +144,7 @@ html, body {
   footer {
     display: flex;
     width: 100%; /* full width of the page, its needed to fix the css grids issue on the body element */
-    margin: auto;
-    padding: 0 5%;
+    padding: 50px 5%;
     justify-content: space-between;
     align-items: center;
   }

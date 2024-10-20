@@ -47,7 +47,7 @@
 
     <main>
         <section>
-            <form action="../">
+            <form class="login-section" action="../">
                 <h1>Log in</h1>
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
@@ -55,9 +55,10 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             
-                <button class="button">Log in</button>
+                <button class="button login-button" type="submit">Log in</button>
+
+                <button class="button accent" type="button" onclick="">Sign up</button> <!-- add the sign up page link inside the onclick=""-->
             </form>
-            <button class="button accent">Sign up</button>
         </section>
     </main>
 
