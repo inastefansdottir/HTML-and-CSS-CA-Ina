@@ -1,32 +1,30 @@
 /* hero section */
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; /* adjust this height to fit the design */
   background-image: url(/assets/images/hero-image.jpg); /* background image */
   background-size: cover; /* make sure the image covers the entire section */
+  background-repeat: no-repeat;
   background-position: center; /* centers the image */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   position: relative; /* keeps the section in normal flow */
-  flex-shrink: 0; /* prevents it from shrinking */
 }
 
 .hero-section::before {
   content: ""; /* necessary for pseudo-elements */
   position: absolute; /* position it on top */
-  top: 0; /* align to top */
-  left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* 50% black */
   z-index: 1;
-}
+} 
 
 .hero-text {
   display: flex; /* flexbox */
   flex-direction: column; /* stack text vertically */
   align-items: center; /* center text horizintally */
   text-align: center; /* center text */
-  margin: auto;
+  margin: 15%;
   z-index: 2;
 }
 
@@ -44,7 +42,7 @@
 
 /* best sellers section */
 .best-sellers_text {
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   font-weight: 400;
   font-size: 2rem;
 }
@@ -80,24 +78,23 @@
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.3)0%, rgba(255, 255, 255, 0.03) 100%); /* "45deg": angle for the gradient, (255, 255, 255, 0.3): 30% white "0%" starts on one end "100%" ends in the other */
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   border-radius: 30px;
   padding: 50px;
   margin: 5% auto;
-  max-width: 800px;
+  width: fit-content;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   z-index: 1;
 }
 
-.newsletter_type-section {
+.newsletter-section_type {
   display: flex;
   margin: 30px 0px;
   gap: 10px;
 }
 
-.newsletter h3 {
+.newsletter-section h3 {
   margin-bottom: 20px;
   font-size: 2em;
   font-weight: 500;

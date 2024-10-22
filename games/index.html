@@ -7,6 +7,7 @@
     <title>GameHub | Games</title>
     <meta name="description" content="Browse our various range of video games">
     <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/global-media.css">
     <link rel="stylesheet" href="/css/games.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +17,14 @@
 
 <body>
     <header> 
-        <!--img class="logo-mobile" src="/assets/images/GameHub logo white.png" alt="Gamehub Logo" -->
         <div class="menu">
-            <!--input type="checkbox" id="menu-checkbox"/>
-            <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label-->
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+            
             <nav class="navbar">
-                <div class="logo">
-                    <a href="../">
-                        <img src="/assets/images/GameHub logo white.png" alt="Gamehub Logo">
-                    </a>
-                </div>
+                <a href="../" class="logo">
+                    <img src="/assets/images/GameHub logo white.png" alt="Gamehub Logo">
+                </a>
                 <ul class="nav-links">
                     <li><a href="../">Home</a></li>
                     <li><a href="../games/" class="current">Games</a></li>
@@ -42,10 +41,22 @@
                     </a>
                 </div>
             </nav>
+
+            <a href="../" class="logo-mobile">
+                <img  src="/assets/images/GameHub logo white.png" alt="Gamehub Logo">
+            </a>
+            <div class="icon-mobile-section">
+                <a href="../log-in/" class="icon-mobile">
+                    <i class="header-icon fa-solid fa-user"></i>
+                </a>
+                <a href="../cart/" class="icon-mobile">
+                    <i class="header-icon fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="games">
+    <main class="games-main">
         <h1>Games</h1>
         <section class="product-list">
             <div class="products">

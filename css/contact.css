@@ -1,5 +1,5 @@
 /* contact section */
-.contact {
+.contact-main {
     display: flex;
     gap: 150px;
     height: auto;
@@ -21,9 +21,7 @@
 }
 
 /* contact form section */
-#name,
-#email,
-#message {
+.contact-form_input {
     background-color: transparent;
     color: #ffffff;
     width: 400px;

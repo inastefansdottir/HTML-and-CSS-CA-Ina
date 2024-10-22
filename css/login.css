@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     width: fit-content;
-    margin: 150px auto;
+    margin: 15vh auto;
     gap: 10px;
 }
 
@@ -28,3 +28,9 @@
 .login-button {
     margin-top: 20px;
 }
+
+.button-width {
+    width: 100%;
+}
+
+/* media */

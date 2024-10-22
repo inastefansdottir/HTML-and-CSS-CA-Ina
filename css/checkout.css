@@ -1,11 +1,11 @@
 /* shipping address and payment */
-main {
+.main-checkout {
     display: flex;
     flex-direction: column;
     margin: 3% 10%;
 }
 
-main h1 {
+.main-checkout h1{
     font-size: 2em;
 }
 
@@ -23,12 +23,13 @@ main h1 {
     gap: 10px;
 }
 
-.modified-width {
+.width-space {
     width: auto;
+    justify-content: space-between;
 }
 
 .flexbox-styling h2 {
-    margin: 20px 0px;
+    margin: 10px 0px;
     font-weight: 400;
 }
 
@@ -149,19 +150,7 @@ main h1 {
     font-weight: 500;
 }
 
-.width-100 {
-    width: 100%;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
 /* payment succesful page */
-.fa-circle-check {
-    font-size: 12em;
-}
-
 .purchase-complete-section {
     display: flex;
     flex-direction: column;
@@ -182,4 +171,8 @@ main h1 {
     color: #801889;
     width: 350px;
     margin: auto;
+}
+
+.fa-circle-check {
+    font-size: 12em;
 }

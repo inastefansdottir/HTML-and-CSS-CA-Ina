@@ -1,0 +1,64 @@
+/* home page media */
+@media (max-width: 1100px) and (min-width: 721px) {
+    #email {
+      width: 300px;
+    }
+    
+    .hero-text h1 {
+      font-size: 2em;
+    }
+  
+    .hero-text {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+  }
+  
+  
+  @media (max-width: 720px) {
+    .hero-text h1 {
+      font-size: 2em;
+    }
+  
+    .hero-text p {
+      width: 85%;
+      font-size: 0.8em;
+    }
+    
+    .best-sellers_text {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .best-sellers_games {
+      flex-direction: column;
+      gap: 50px;
+      margin: auto;
+    }
+  
+    .best-sellers_games img {
+      width: 85vw;
+      height: 85vw;
+    }
+  
+    #email {
+      width: 250px;
+    }
+  
+    .newsletter-section {
+      margin: 10% auto;
+      width: 85vw;
+    }
+  
+    .newsletter-section h3 {
+      font-size: 1.8em;
+    }
+  
+    .newsletter-section_type {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }

@@ -7,7 +7,9 @@
     <title>GameHub | Contact us</title>
     <meta name="description" content="Contact us through email or phone">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="/css/global-media.css">
     <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/contact-media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
@@ -16,16 +18,14 @@
 
 <body>
     <header> 
-        <!--img class="logo-mobile" src="/assets/images/GameHub logo white.png" alt="Gamehub Logo" -->
         <div class="menu">
-            <!--input type="checkbox" id="menu-checkbox"/>
-            <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label-->
+            <input type="checkbox" id="menu-checkbox"/>
+            <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+            
             <nav class="navbar">
-                <div class="logo">
-                    <a href="../">
-                        <img src="/assets/images/GameHub logo white.png" alt="Gamehub Logo">
-                    </a>
-                </div>
+                <a href="../" class="logo">
+                    <img src="/assets/images/GameHub logo white.png" alt="Gamehub Logo">
+                </a>
                 <ul class="nav-links">
                     <li><a href="../">Home</a></li>
                     <li><a href="../games/">Games</a></li>
@@ -42,10 +42,22 @@
                     </a>
                 </div>
             </nav>
+
+            <a href="../" class="logo-mobile">
+                <img  src="/assets/images/GameHub logo white.png" alt="Gamehub Logo">
+            </a>
+            <div class="icon-mobile-section">
+                <a href="../log-in/" class="icon-mobile">
+                    <i class="header-icon fa-solid fa-user"></i>
+                </a>
+                <a href="../cart/" class="icon-mobile">
+                    <i class="header-icon fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="contact">
+    <main class="contact-main">
         <section class="contact-section">
             <h1>Contact us</h1>
             <p>
@@ -61,15 +73,15 @@
             <h2>Contact Form</h2>
             <div class="contact-form_content">
                 <label class="contact-form_text" for="name">Your Name</label>
-                <input type="text" id="name" name="name" minlength="3" maxlength="30">
+                <input class="contact-form_input" type="text" id="name" name="name" minlength="3" maxlength="30">
             </div>
             <div class="contact-form_content">
                 <label class="contact-form_text" for="email">Email Address</label>
-                <input type="email" id="email" name="email">
+                <input class="contact-form_input" type="email" id="email" name="email">
             </div>
             <div class="contact-form_content">
                 <label class="contact-form_text" for="message">Message</label>
-                <textarea id="message" name="message" rows="8" cols="30"></textarea>
+                <textarea class="contact-form_input" id="message" name="message" rows="8" cols="30"></textarea>
             </div>
             <button class="button">Send Message</button>
         </form>
