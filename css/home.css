@@ -1,6 +1,6 @@
 /* hero section */
 .hero-section {
-  background-image: url(/assets/images/hero-image.jpg); /* background image */
+  background-image: url(assets/images/hero-image.jpg); /* background image */
   background-size: cover; /* make sure the image covers the entire section */
   background-repeat: no-repeat;
   background-position: center; /* centers the image */
