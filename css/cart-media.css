@@ -7,9 +7,6 @@
 }
 
 @media (max-width: 720px) {
-    .cart-main {
-        margin-top: 40px;
-    }
     
     .order-list {
         grid-template-columns: 100px 80px 35px 90px 35px 40px;

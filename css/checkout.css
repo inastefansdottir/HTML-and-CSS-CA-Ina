@@ -2,7 +2,7 @@
 .main-checkout {
     display: flex;
     flex-direction: column;
-    margin: 3% 10%;
+    margin: 3% 5%;
 }
 
 .main-checkout h1{
@@ -16,10 +16,14 @@
 }
 
 /* customer info, shipping address and payment section */
+.type-area-section {
+    display: flex;
+    gap: 40px;
+}
+
 .flexbox-styling {
     display: flex;
     flex-direction: column;
-    width: 400px;
     gap: 10px;
 }
 
@@ -36,7 +40,7 @@
 .type-area-styling {
     background-color: transparent;
     color: #ffffff;
-    width: 400px;
+    width: 25vw;
     font-weight: 400;
     font-size: 0.8em;
     padding: 14px 20px;
@@ -155,10 +159,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8% auto;
+    margin: 70px auto 0px auto;
     text-align: center;
     gap: 20px;
     color: #db21cc;
+}
+
+.fa-circle-check {
+    font-size: 12em;
 }
 
 .purchase-complete-section h1 {
@@ -170,10 +178,78 @@
     font-size: 1.4em;
     font-weight: 400;
     color: #801889;
-    width: 350px;
+    width: 330px;
     margin: auto;
 }
 
-.fa-circle-check {
-    font-size: 12em;
+@media (max-width: 1350px) {
+    .type-area-section {
+        flex-direction: column;
+    }
+
+    .type-area-styling {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .type-area-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .type-area-styling {
+        width: 40vw;
+    }
+
+    .container-divider {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .order-summary {
+        margin-top: 40px;
+    }
+
+    /* payment successful page */
+    .fa-circle-check {
+        font-size: 9em;
+    }
+    
+    .purchase-complete-section h1 {
+        font-size: 1.8em;
+    }
+    
+    .purchase-complete-section p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-checkout h1{
+        font-size: 1.8em;
+    }
+
+    .type-area-section {
+        flex-direction: column;
+    }
+
+    .type-area-styling {
+        width: 80vw;
+    }
+
+    .order-list {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 110px 80px 50px 50px 30px;
+        grid-template-rows: 15px 1px 110px 1px;
+    }
+
+    .product-image {
+        width: 95px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }

@@ -53,8 +53,8 @@
 
     .navigation {
       position: absolute;
-      background: linear-gradient(45deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0.4) 100%);
-      border: 0.3px solid black;
+      background: linear-gradient(45deg, rgba(0, 1, 31, 1)0%, rgba(0, 1, 31, 0.7) 100%);
+      border: 0.3px solid #00011f;
       top: 0px;
       left: 0px;
       padding: 20% 6% 3% 6%;

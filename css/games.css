@@ -52,7 +52,7 @@
 .specififc-game-main {
     display: flex;
     gap: 40px;
-    margin: 2% auto;
+    margin: 5% auto;
     height: 630px;
 }
 
@@ -209,31 +209,4 @@ input[type="radio"] {
 .counter {
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.3)0%, rgba(255, 255, 255, 0.03) 100%);
     border: 0.3px solid rgba(255, 255, 255, 0.3);
-}
-
-
-/* media */
-@media (max-width: 1300px) and (min-width: 901px) {
-    .product-list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 900px) and (min-width: 601px) {
-    .product-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 600px) {
-    .product-list {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        margin: 0 5%;
-    }
-
-    .games-main h1 {
-        font-size: 2em;
-        margin: 0 5%;
-    }
-
 }
