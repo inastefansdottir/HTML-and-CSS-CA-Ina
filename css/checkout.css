@@ -154,6 +154,7 @@
 .purchase-complete-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 8% auto;
     text-align: center;
     gap: 20px;

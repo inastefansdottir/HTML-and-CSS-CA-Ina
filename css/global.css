@@ -12,7 +12,8 @@ html, body {
     background-color: #00011f; /* back up colour */
     background-image: url(../assets/images/background.jpg);
     background-repeat: no-repeat; /* doesnt repeat background */
-    background-attachment: fixed; /* stys fixed and doesnt scroll */
+    background-attachment: fixed; /* stays fixed and doesnt scroll */
+    background-size: cover; /* covers the whole screen no matter the resolution */
     font-family: 'alexandria', Helvetica, sans-serif, arial;
     font-weight: 200;
     color: #ffffff;
@@ -35,7 +36,7 @@ html, body {
     display: none;
   }
 
-  .navbar {
+  .navigation {
     position: relative;
     background-color: transparent;
     z-index: 5; /* makes sure its on top of the hero picture and dark overlay */
@@ -75,6 +76,7 @@ html, body {
 
   .current {
     color: #db21cc !important; /* prioritises this colour */
+    font-weight: 600 !important;
   }
 
   /* right side of header */
@@ -129,6 +131,7 @@ html, body {
     border-radius: 30px;
     text-decoration: none;
     text-align: center;
+    align-content: center;
     width: fit-content;
     cursor: pointer; /* cursor changes to a pointer */
   }
@@ -139,6 +142,10 @@ html, body {
   .accent {
     background-color: #db21cc;
   }
+
+  .button-width {
+    width: 100%;
+}
   
   /* footer style */
   footer {

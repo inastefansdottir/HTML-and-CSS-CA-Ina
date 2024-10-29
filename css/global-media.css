@@ -1,5 +1,5 @@
   /* global media */
-  @media (max-width: 1100px) and (min-width: 721px) {
+  @media (max-width: 1100px) {
     #search {
       display: none;
     }
@@ -13,14 +13,14 @@
 
   @media (max-width: 720px) {
     /* displays */
-    .navbar,
+    .navigation,
     #menu-checkbox,
     .search-icons-section,
     .logo {
       display: none;
     }
 
-    #menu-checkbox:checked ~ .navbar {
+    #menu-checkbox:checked ~ .navigation {
       display: block;
     }
 
@@ -31,7 +31,7 @@
       display: block;
     }
 
-    /* header and navbar */
+    /* header and navigation */
     header {
       position: relative;
       align-items: center;
@@ -51,7 +51,7 @@
       margin-left: 5px;
     }
 
-    .navbar {
+    .navigation {
       position: absolute;
       background: linear-gradient(45deg, rgba(0, 0, 0, 1)0%, rgba(0, 0, 0, 0.4) 100%);
       border: 0.3px solid black;
