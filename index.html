@@ -22,7 +22,9 @@
             <div class="menu">
 
                 <input type="checkbox" id="menu-checkbox">
-                <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+                <label for="menu-checkbox" class="hamburger-icon" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
                 
                 <div class="navigation">
                     <a href="./index.html" class="logo">
@@ -90,13 +92,21 @@
             </div>
         </section>
 
-        <form class="newsletter-section">
-            <h3>Sign up for our newsletter!</h3>
-            <p>Stay up to date with our latest news and products.</p>
+        <form class="newsletter-section" action="">
+            <h3 id="newsletter-heading">Sign up for our newsletter!</h3>
+            <p id="newsletter-description">Stay up to date with our latest news and products.</p>
+
             <div class="newsletter-section_type">
-                <input type="email" placeholder="Your email address" id="email" name="email" required>
+                <input 
+                type="email" 
+                placeholder="Your email address" 
+                id="email" 
+                name="email" 
+                required
+                aria-labelledby="newsletter-heading newsletter-description">
                 <button type="submit" class="button accent">SUBSCRIBE</button>
             </div>
+
             <p class="faded-text">Your email is safe with us, we don't spam.</p>
         </form>
     </main>

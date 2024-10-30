@@ -21,7 +21,9 @@
         <div class="menu">
 
             <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+            <label for="menu-checkbox" class="hamburger-icon" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             
             <div class="navigation">
                 <a href="../index.html" class="logo">
@@ -37,10 +39,10 @@
                 </nav>
                 <div class="search-icons-section">
                     <input type="search" placeholder="Search" id="search" name="search" aria-label="Search for games">
-                    <a href="./log-in/" aria-label="User account login">
+                    <a href="../log-in/" aria-label="User account login">
                         <i class="header-icon fa-solid fa-user" aria-hidden="true"></i>
                     </a>
-                    <a href="./cart/" aria-label="View shopping cart">
+                    <a href="../cart/" aria-label="View shopping cart">
                         <i class="header-icon fa-solid fa-cart-shopping" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -62,38 +64,41 @@
     </header>
 
     <main class="specififc-game-main">
-        <div class="thumbnail-section">
-            <label for="radio1">
-                <img class="thumbnail" src="../assets/images/GameHub_covers5.jpg" alt="image of the video game cover">
-            </label>
+        <fieldset>
+            <legend>Select an image preview</legend>
+            <div class="thumbnail-section">
+                <label for="radio1">
+                    <img class="thumbnail" src="../assets/images/GameHub_covers5.jpg" alt="Preview cover art of the video game 'Assassin' featuring a ninja mascot">
+                </label>
 
-            <label for="radio2">
-                <img class="thumbnail" src="../assets/images/gameplay-pic-1.jpg" alt="image of gameplay">
-            </label>
+                <label for="radio2">
+                    <img class="thumbnail" src="../assets/images/gameplay-pic-1.jpg" alt="Preview screenshot of gameplay from 'Assassin' showing an action sequence">
+                </label>
 
-            <label for="radio3">
-                <img class="thumbnail" src="../assets/images/gameplay-pic-2.jpg" alt="image of gameplay">
-            </label>
-        </div>
+                <label for="radio3">
+                    <img class="thumbnail" src="../assets/images/gameplay-pic-2.jpg" alt="Preview screenshot of gameplay from 'Assassin' featuring character customization options">
+                </label>
+            </div>
+        </fieldset>
 
 
         <div class="slideshow-section">
             <!-- radio buttons for slides -->
-            <input type="radio" name="radio-btn" id="radio1" checked>
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio1" checked aria-label="Slide 1">
+            <input type="radio" name="radio-btn" id="radio2" aria-label="Slide 2">
+            <input type="radio" name="radio-btn" id="radio3" aria-label="Slide 3">
 
              <!-- images -->
             <div class="slideshow first">
-                <img class="slides" src="../assets/images/GameHub_covers5.jpg" alt="image of the video game cover">
+                <img class="slides" src="../assets/images/GameHub_covers5.jpg" alt="Cover art of the video game 'Assassin' featuring a ninja mascot">
             </div>
 
             <div class="slideshow">
-                <img class="slides" src="../assets/images/gameplay-pic-1.jpg" alt="image of gameplay">
+                <img class="slides" src="../assets/images/gameplay-pic-1.jpg" alt="Screenshot of gameplay from 'Assassin' showing an action sequence">
             </div>
 
             <div class="slideshow">
-                <img class="slides" src="../assets/images/gameplay-pic-2.jpg" alt="image of gameplay">
+                <img class="slides" src="../assets/images/gameplay-pic-2.jpg" alt="Screenshot of gameplay from 'Assassin' featuring character customization options">
             </div>
 
               <!-- arrow buttons (labels) -->
