@@ -1,5 +1,21 @@
 /* Checkout page media */
+@media (max-width: 1350px) {
+    .type-area-section {
+        flex-direction: column;
+    }
+
+    .type-area-styling {
+        width: 35vw;
+    }
+}
+
 @media (max-width: 900px) {
+    .container-divider {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
     .type-area-section {
         flex-direction: row;
         justify-content: space-between;
@@ -9,21 +25,11 @@
         width: 40vw;
     }
 
-    .container-divider {
-        flex-direction: column;
-        gap: 40px;
-        align-items: center;
-    }
-
     .order-summary {
         margin-top: 40px;
     }
 
     /* payment successful page media */
-    .fa-circle-check {
-        font-size: 9em;
-    }
-    
     .purchase-complete-section h1 {
         font-size: 1.8em;
     }
@@ -31,11 +37,16 @@
     .purchase-complete-section p {
         font-size: 1.2em;
     }
+
+    .fa-circle-check {
+        font-size: 9em;
+    }
 }
 
 @media (max-width: 600px) {
     .main-checkout h1{
         font-size: 1.8em;
+        margin-left: 20px;
     }
 
     .type-area-section {

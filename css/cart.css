@@ -31,20 +31,27 @@
 }
 
 /* CSS Grids content */
+.text-style {
+    font-size: 0.7em;
+    font-weight: 300;
+    color: rgba(225, 225, 225, 0.8);
+}
+
 .line-seperator {
     position: relative;
     grid-column: 1 / -1; /* spans all columns */
     border-bottom: 1px solid rgba(225, 225, 225, 0.5);
 }
 
-.center-align {
-    align-self: center;
+.product-image {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.text-style {
-    font-size: 0.7em;
-    font-weight: 300;
-    color: rgba(225, 225, 225, 0.8);
+.center-align {
+    align-self: center;
 }
 
 .bold-text-style {
@@ -87,13 +94,6 @@
 .ex:active {
     background-color: #db21cc;
     border-color: #db21cc;
-}
-
-.product-image {
-    width: 100px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 10px;
 }
 
 .counter,

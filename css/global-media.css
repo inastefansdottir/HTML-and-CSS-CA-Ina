@@ -1,5 +1,5 @@
-  /* global media */
-  @media (max-width: 1100px) {
+/* global media */
+@media (max-width: 1100px) {
     #search {
       display: none;
     }
@@ -11,7 +11,7 @@
   }
 
 
-  @media (max-width: 720px) {
+@media (max-width: 720px) {
     /* displays */
     .navigation,
     #menu-checkbox,
@@ -90,4 +90,4 @@
       flex-direction: column;
       gap: 20px;
     }
-  }
+}

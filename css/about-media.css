@@ -23,11 +23,6 @@
         gap: 60px;
     }
 
-    .about-main img {
-        width: 35vw;
-        height: 35vw;
-    }
-
     .about-main h1 {
         font-size: 1.4em;
     }
@@ -40,8 +35,12 @@
         font-size: 1em;
         width: 280px;
     }
-}
 
+    .about-main img {
+        width: 35vw;
+        height: 35vw;
+    }
+}
 
 @media (max-width: 720px) {
     .about-main {
@@ -49,11 +48,7 @@
         flex-direction: column;
         gap: 60px;
     }
-
-    .text-section {
-        text-align: center;
-    }
-
+    
     .about-main h2 {
         font-size: 3.5em;
     }
@@ -65,5 +60,9 @@
 
     .about-main p {
         font-size: 1em;
+    }
+
+    .text-section {
+        text-align: center;
     }
 }

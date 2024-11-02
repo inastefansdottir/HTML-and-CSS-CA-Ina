@@ -27,11 +27,6 @@
     gap: 10px;
 }
 
-.width-space {
-    width: auto;
-    justify-content: space-between;
-}
-
 .flexbox-styling h2 {
     margin: 10px 0px;
     font-weight: 400;
@@ -46,6 +41,11 @@
     padding: 14px 20px;
     border: 1px solid white;
     border-radius: 30px;
+}
+
+.width-space {
+    width: auto;
+    justify-content: space-between;
 }
 
 /* your purchases section, grid-area */
@@ -72,19 +72,26 @@
 }
 
 /* CSS Grids content */
+.purchase {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
 .line-seperator {
     position: relative;
     grid-column: 1 / -1; /* spans all columns */
     border-bottom: 1px solid rgba(225, 225, 225, 0.5);
 }
 
-.center-align {
-    align-self: center;
+.product-image {
+    width: 120px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.purchase {
-    font-size: 0.8em;
-    font-weight: 300;
+.center-align {
+    align-self: center;
 }
 
 .bold-text-style {
@@ -111,13 +118,6 @@
     border-color: #db21cc;
 }
 
-.product-image {
-    width: 120px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 .ex,
 .order-summary {
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.3)0%, rgba(255, 255, 255, 0.03) 100%);
@@ -132,6 +132,11 @@
     padding: 30px;
     gap: 35px;
     border-radius: 30px;
+}
+
+.order-summary h3 {
+    font-size: 1.5em;
+    font-weight: 500;
 }
 
 .order-summary_text {
@@ -149,10 +154,6 @@
     font-size: 1.2em;
 }
 
-.order-summary h3 {
-    font-size: 1.5em;
-    font-weight: 500;
-}
 
 /* payment succesful page */
 .purchase-complete-section {
@@ -163,10 +164,6 @@
     text-align: center;
     gap: 20px;
     color: #db21cc;
-}
-
-.fa-circle-check {
-    font-size: 12em;
 }
 
 .purchase-complete-section h1 {
@@ -182,12 +179,6 @@
     margin: auto;
 }
 
-@media (max-width: 1350px) {
-    .type-area-section {
-        flex-direction: column;
-    }
-
-    .type-area-styling {
-        width: 35vw;
-    }
+.fa-circle-check {
+    font-size: 12em;
 }
